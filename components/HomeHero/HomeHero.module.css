@@ -1,0 +1,64 @@
+.hero {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 700px;
+    padding: 195px 805px 0 64px;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/images/Picture.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-resolution: 192dpi),
+(-webkit-min-device-pixel-ratio: 2) {
+    .hero {
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+        url("/images/Picture@2x.png");
+    }
+}
+
+.content {
+    width: max-content;
+    height: 176px;
+}
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1;
+    color: var(--inputs);
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33333;
+    color: var(--inputs);
+    margin-bottom: 40px;
+}
+
+.button {
+    border-radius: 200px;
+    padding: 16px;
+    width: 173px;
+    height: 56px;
+    background: var(--grey-green);
+    color: var(--white);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background: var(--green-hover);
+}
